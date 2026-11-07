@@ -16,3 +16,28 @@ std::cout << "Hello, " << name << "!" << std::endl; // print the result by takin
 std::cout << "You are " << age << " years old." << std::endl; // print the result by taking the value from the variable age
 return 0;
 }
+
+
+// std::ws example
+
+/* #include <iostream>
+
+int main(){
+// cout (insertion operator <<) is used to print the output to the console
+// cin (extraction operator >>) is used to take input from the console
+// getline is used to take the value even after the first space in the input
+
+std::string name; // the variable name
+std::string age; 
+
+std::cout << "Enter your age: "; // prompt the user to enter their age                             / if we accept user input with cin followed by getline in our input buffer there is a \n character and we dont pick up that \n character when we reach the getline function it accepts the newline character so to prevent that we use std::ws in the getline
+std::cin >> age; // take the value given by the user and store it in the variable age                  
+                                                                                                       
+std::cout << "Enter your full name: "; // prompt the user to enter their name
+std::getline(std::cin >> std::ws , name); // the std::ws also stands as standard wide space is used to ignore any leading whitespace characters in the input buffer before reading the full name
+std::cout << "Hello, " << name << "!" << std::endl; // print the result by taking the value from the variable name
+std::cout << "You are " << age << " years old." << std::endl; // print the result by taking the value from the variable age
+return 0;
+}
+
+*/
