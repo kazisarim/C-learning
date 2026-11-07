@@ -7,6 +7,7 @@ namespace second{
     int x = 2; // name space second value of x
 }
 int main(){
+    // using namespace first; (if this is used the local variable will adopt the value of the name space reffered to and if we wanna display x as first namespace than we can just use this to display it and the prefix first::x will not be needed)
     int x = 0; // local value of x
   
     std::cout << "Local x: " << x << std::endl; // prints local value of x
