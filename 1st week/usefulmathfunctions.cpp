@@ -21,4 +21,4 @@ int main(){
     return 0;
 }
 
-// more math functions syntax are in '''https://cplusplus.com/reference/cmath/'''
+// more math functions syntax are in https://cplusplus.com/reference/cmath/
