@@ -56,6 +56,8 @@ int main(){
     case 12:
     std::cout << "It is December";
     break;
+    default:
+    std::count << "Please enter in only numbers (1-12)"; // mainly the default case like else statement
 }
     
     return 0;
