@@ -20,11 +20,11 @@
 
     grade >= 60 ? cout << "You Passed!" : cout << "You Failed!";
 
-   parentsproud == 1 ? cout << "\nYour parents are proud!": cout << "\nYour parents are dissapointed at you!";
+  // parentsproud == 1 ? cout << "\nYour parents are proud!": cout << "\nYour parents are dissapointed at you!"; // You can either use this 
+    
+    cout << (parentsproud == 1 ? "\nYour Parents are proud!" : "\n Your parents are dissapointed at you!"); //  or this
 
     grade % 2 == 1 ? cout << "\nODD NUMBER" : cout << "\nEVEN NUMBER";
-
-
 
       return 0;
   }
