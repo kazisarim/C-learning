@@ -3,7 +3,9 @@
     int main() {
     using std::cout;
     using std::cin;
-
+    char playAgain;
+    
+do{
     int num;
     int guess; 
     int tries = 0;
@@ -38,9 +40,17 @@
         }while(guess != num);
 
 
-    cout << "\n******************************************************";
+        cout << "\nWould you like to play again? (y/n): ";
+        cin >> playAgain;
+        cout << "\n";
 
-        return 0;
-    }
+    }while(playAgain == 'y' || playAgain == 'Y'); // the whole thing is a in a loop if playAgain variable is Y it makes this statement true so it does the whole process all over again
 
-    
+    cout << "Thanks for playing!\n";
+
+     cout << "\n******************************************************";
+
+     while(1 == 1){} // so it doesnt auto close the windows
+
+ return 0;
+}
